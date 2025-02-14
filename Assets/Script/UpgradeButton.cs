@@ -26,7 +26,7 @@ public class UpgradeButton : MonoBehaviour
         {
             PlayerLevel += 1;
             GlobleCoin.CoinCount -= UpgradeCost;
-            GlobleCoin.Increasement *= 2;
+            GlobleCoin.CoinIncreasement *= 2;
 
             UpgradeCost *= 3;
         }
