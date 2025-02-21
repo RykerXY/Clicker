@@ -13,6 +13,6 @@ public class AddCoinDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        IncreaseCoinDisplay.text = "+" + GlobleCoin.CoinIncreasement;
+        IncreaseCoinDisplay.text = "+" + GlobleCoin.FormatNumberDouble(GlobleCoin.CoinIncreasement);
     }
 }

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SpawnOnClick : MonoBehaviour
 {
@@ -21,4 +20,17 @@ public class SpawnOnClick : MonoBehaviour
         
         Destroy(spawnedObject, 1f);
     }
+    public void SpawnPrefabAutoClick(RectTransform parentButton)
+    {
+        Vector2 randomPosition = new Vector2(
+            Random.Range(0, (int)parentButton.rect.width),
+            Random.Range(0, (int)parentButton.rect.height)
+        );
+
+        GameObject spawnedObject = Instantiate(prefab, parentCanvas);
+        spawnedObject.GetComponent<RectTransform>().anchoredPosition = randomPosition;
+
+        Destroy(spawnedObject, 1f);
+    }
+
 }

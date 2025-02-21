@@ -4,6 +4,6 @@ public class AddCoinButton : MonoBehaviour
 {
     public void AddCoin()
     {
-        GlobleCoin.CoinCount += GlobleCoin.CoinIncreasement;
+        GlobleCoin.CoinCount += (long)GlobleCoin.CoinIncreasement;
     }
 }

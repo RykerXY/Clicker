@@ -13,8 +13,8 @@ public class GlowthBar : MonoBehaviour
 
     void Update()
     {
-        slider.value = GlobleGlowth.GlowthCount;
-        slider.maxValue = GlobleGlowth.GlowthRequiredForNextStage;
-        GlowthCountDisplay.text =GlobleGlowth.GlowthCount + "/" + GlobleGlowth.GlowthRequiredForNextStage + "GP";
+        slider.value = (float)GlobleGlowth.GlowthCount;
+        slider.maxValue = (float)GlobleGlowth.GlowthRequiredForNextStage;
+        GlowthCountDisplay.text = GlobleGlowth.GlowthCount + "/" + GlobleCoin.FormatNumberDouble(GlobleGlowth.GlowthRequiredForNextStage);
     }
 }
